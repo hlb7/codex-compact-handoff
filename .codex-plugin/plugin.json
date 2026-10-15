@@ -1,0 +1,7 @@
+{
+  "name": "codex-compact-handoff",
+  "version": "0.1.0",
+  "description": "Observe Codex context usage and preserve local handoffs before compaction.",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json"
+}

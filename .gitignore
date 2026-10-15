@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+dist/
+.coverage
+htmlcov/
+.codex/
+*.jsonl
+*-auto-*.md
+*-agent-*.md
+state.json

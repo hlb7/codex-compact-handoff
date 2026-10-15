@@ -1,0 +1,62 @@
+{
+  "description": "Local context monitoring and compaction checkpoints",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/skills/codex-compact-handoff/scripts/compact_handoff.py\" hook",
+            "timeout": 15,
+            "additionalContextLimit": 700
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/skills/codex-compact-handoff/scripts/compact_handoff.py\" hook",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/skills/codex-compact-handoff/scripts/compact_handoff.py\" hook",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/skills/codex-compact-handoff/scripts/compact_handoff.py\" hook",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/skills/codex-compact-handoff/scripts/compact_handoff.py\" hook",
+            "timeout": 15,
+            "additionalContextLimit": 700
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Compact Handoff"
+  short_description: "Monitor context and preserve handoffs before compaction"
+  default_prompt: "Use $codex-compact-handoff to check this session context and save a handoff before compaction."
